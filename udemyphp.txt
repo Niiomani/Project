@@ -1,0 +1,68 @@
+PHP example // needs server
+<?php
+echo "This is php text";
+?>
+
+
+if/else/elseif
+
+if($win ==2){
+echo "I will buy a car";
+} else {
+echo "You did not win so ride your bike to college"
+}
+
+User authentication example
+if user is logged in, redirect login page to account.php else show login form 
+
+if($logged_in=1){
+ header ("location: account.php"); //redirect to account page
+} else {
+ include ("login.php")
+}
+
+if($logged_in=1){
+ header ("location: account.php"); //redirect to account page
+} elseif {
+ include ("login.php")
+}else {
+ echo "session expired";
+}
+
+
+Arrays
+$users = array ()
+
+example
+Indexed type
+
+$users = array("Abraham", "Ghanaian", "Agripreneur")
+echo $users [0]
+
+//results will be my name
+
+Associative type
+$users = array("fullname"=>"Abraham","nationality"=> "Ghanaian", "Career"=>"Agripreneur")
+echo $users [fullname]
+
+
+FOREACH LOOP
+
+$users = array("fullname"=>"Abraham","nationality"=> "Ghanaian", "Career"=>"Agripreneur")
+foreach($users as $user){
+ echo $user;
+}
+
+//results will be my name
+
+super globals
+
+$GLOBALS
+$_SESSIONS
+$_POST
+$_GET
+$_FILES
+$_SERVER
+
+filter_var---> does both validation and sanitisation and take two parameter; first a variable and a special
+
